@@ -1,0 +1,79 @@
+:root {
+  --bgColor: #08070a;
+  --textColor: #b3c9d3;
+  --linkColor: var(--textColor);
+  --textColorHover: #ffffff;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  font-size: 13px;
+  background: var(--bgColor);
+  color: var(--textColor);
+  border: #b3c9d3;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+
+
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: underline;
+  margin-top: 0.2rem;
+}
+
+a > div:hover {
+  color: var(--textColorHover);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 17rem;
+  height: 7rem;
+  outline-style: solid;
+  outline-color: #b3c9d3;
+  outline-width: 1px;
+}
+
+.flex-top-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+}
+
+.center-box {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 0.2rem;
+}
+
+.center-box > span {
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  padding-left: 1rem;
+}
+
+
+.flex-bottom-bar {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  color: var(--bgColor);
+  background-color: var(--textColor);
+}
+
+.botton-bar {
+  padding: 0.5rem;
+}
