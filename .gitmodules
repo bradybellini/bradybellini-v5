@@ -1,3 +1,6 @@
 [submodule "bradybellini-v5/themes/PaperMod"]
 	path = bradybellini-v5/themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "bradybellini-v5/bradybellini-v5/themes/PaperMod"]
+	path = bradybellini-v5/bradybellini-v5/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
