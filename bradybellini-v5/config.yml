@@ -1,0 +1,96 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Brady Bellini
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Brady Bellini
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  images: ["/bradybellini-092502021-socialimage.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "favicon.png"
+    favicon16x16: "favicon16.svg"
+    favicon32x32: "favicon32.png"
+    apple_touch_icon: "favicon.png"
+    safari_pinned_tab: "favicon.png"
+
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
+
+  homeInfoParams:
+    Title: "Hi \U0001F44B"
+    Content: "I’m Brady. I am currently a Business Intelligence Analyst. I also enjoy solving interesting problems and creating things with cool tech. Feel free to reach out!"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/bradybellini"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/bradybellini/"
+    - name: unsplash
+      url: "https://unsplash.com/@brady_bellini"
+    - name: rss
+      url: "/index.xml"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+menu:
+  main:
+    - identifier: Contact
+      name: Contact
+      url: /contact/
+      weight: 10
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: Projects
+      name: Projects
+      url: https://interplanetarycorporation.io
+      weight: 20
